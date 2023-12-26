@@ -1,7 +1,3 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 
 import os
 from pyrogram import Client, filters
@@ -21,7 +17,7 @@ async def share_text(client, message):
         await message.reply_text(
             text=f"**Notice:**\n\n1. Reply Any Messages.\n2. No Media Support\n\n**Any Question Join Support Chat**",                
             reply_to_message_id=reply_id,               
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Updates channel", url=f"https://t.me/vj_bots")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Updates channel", url=f"https://t.me/RB_Backup")]])
             )                                                   
         return
     await message.reply_text(
