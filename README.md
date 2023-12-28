@@ -188,7 +188,7 @@ python3 bot.py
 * [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://t.me/Govind_Rawat921)
 * * [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Instagram&color=critical)](https://www.instagram.com/govind_rawat921?igsh=MXFnc2tsaGFteGl2aQ==)
 
-[Note To A So Called Dev](https://telegram.dog/vj_botz): 
+[Note To A So Called Dev](https://t.me/Govind_Rawat921): 
 
 Fork the repo and edit as per your needs.
 
