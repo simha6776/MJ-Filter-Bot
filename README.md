@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://graph.org/file/d57d6f83abb6b8d0efb02.jpg" alt="RB-Filter-Bot Logo">
+  <img src="https://telegra.ph/file/3f2a631dcae8a7f068a12.jpg" alt="RB-Filter-Bot Logo">
 </p>
 <h1 align="center">
   RB-FILTER-BOT
