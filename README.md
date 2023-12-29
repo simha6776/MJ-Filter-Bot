@@ -111,13 +111,13 @@
 ### Optional Variables
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used separated by space )
 * `FILE_STORE_CHANNEL`: Channel from were file store links of posts should be made.Separate multiple IDs by space
-* Check [info.py](https://github.com/VJBots/VJ-Filter-Bot/blob/main/info.py) for more optional variables
+* Check [info.py](https://github.com/RB-Bots/FILTER_BOT/blob/main/info.py) for more optional variables
 
 
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/VJBots/VJ-Filter-Bot">
+<a href="https://heroku.com/deploy?template=https://github.com/RB-Bots/FILTER_BOT">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
 </a>
 </p>
@@ -129,7 +129,7 @@
 <br>
 <br>
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/VJBots/VJ-Filter-BotAuto-branch=Tech_VJ&name=VJ-Filter-bot)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/RB-Bots/FILTER_BOTAuto-branch=RB_filter_bot&name=VJ-Filter-bot)
 </details>
 
 <details><summary>Deploy To Render</summary>
@@ -156,7 +156,7 @@ Use these settings when adding a monitor:</b>
 <b>Click on the below button to deploy directly to render ↓</b>
 <br>
 <br>
-<a href="https://render.com/deploy?repo=https://github.com/VJBots/VJ-Filter-Bot/tree/main">
+<a href="https://render.com/deploy?repo=https://github.com/RB-Bots/FILTER_BOT/tree/main">
 <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
 </a>
 </details>
@@ -164,7 +164,7 @@ Use these settings when adding a monitor:</b>
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/VJBots/VJ-Filter-Bot
+git clone https://github.com/RB-Bots/FILTER_BOT
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
