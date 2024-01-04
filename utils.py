@@ -531,8 +531,8 @@ async def get_tutorial(chat_id):
         TUTORIAL_URL = TUTORIAL
     return TUTORIAL_URL
 
-async def get_premium(chat_id):
-    settings = await get_settings(chat_id) #fetching settings for group
+async def get_premium(user_id):
+    settings = await get_settings(user_id) #fetching settings for group
     if 'PREMIUM' in settings.keys():
         if settings['IS_PREMIUM_USER']:
             PREMIUM_ID = settings['PREMIUM']
