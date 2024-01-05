@@ -7,7 +7,7 @@ from database.premiumdb import daily as daily_
 import datetime
 from datetime import timedelta, date, datetime
 from datetime import date as date_
-from helper.progress import humanbytes
+from database.progress import humanbytes
 from database.premiumdb import daily as daily_
 from lazybot.date import check_expi
 from database.premiumdb import uploadlimit, usertype
