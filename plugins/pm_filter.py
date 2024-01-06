@@ -1363,9 +1363,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl') 
          ], [ 
              InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share'), 
-             InlineKeyboardButton('ꜱᴏɴɢ', callback_data='song') 
+             InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data='shortlink_info')
          ], [
-             InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data='shortlink_info'),
+             InlineKeyboardButton('ꜱᴏɴɢ', callback_data='song'), 
              InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),
              InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json'),  
          ], [             
