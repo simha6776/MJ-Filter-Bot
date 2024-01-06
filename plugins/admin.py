@@ -36,8 +36,8 @@ async def buypremium(bot, message):
 async def vip1(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
-	add_date  = date.today()
-	ex_date(int(user_id), today + timedelta(days=30)
+	#add_date  = date.today()
+	#ex_date(int(user_id), today + timedelta(days=30)
 	usertype(int(user_id),"🪙 **SILVER**")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Upload limit 10 GB")
@@ -48,8 +48,8 @@ async def vip1(bot,update):
 async def vip2(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
-    add_date  = date.today()
-	ex_date(int(user_id), today + timedelta(days=30)
+       # add_date  = date.today()
+	#ex_date(int(user_id), today + timedelta(days=30)
 	usertype(int(user_id),"💫 **GOLD**")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Upload limit 50 GB")
@@ -58,8 +58,8 @@ async def vip2(bot,update):
 @Client.on_callback_query(filters.regex('vip3'))
 async def vip3(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
-	user_id = id[1].replace(" ", "")
-	add_date  = date.today()
+	#user_id = id[1].replace(" ", "")
+	#add_date  = date.today()
 	ex_date(int(user_id), today + timedelta(days=30)
 	usertype(int(user_id),"💎 **DIAMOND**")
 	addpre(int(user_id))
