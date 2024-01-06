@@ -664,7 +664,8 @@ Also your tutorial will be Added Your Group..."""
 
 এছাড়াও আপনার দল ভিডিও সংগ্রহের প্রশিক্ষণ দেবে..."""
 
-PREMIUM_TXT = """<b>Hᴇʏ {}
+PREMIUM_TXT = """
+Hey <a href='tg://settings'>My Friend</a>
 Pʀᴇᴍɪᴜᴍ Fᴇᴀᴛᴜʀᴇs 🎁                      
 ○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ
 ○ ᴅɪʀᴇᴄᴛ ғɪʟᴇs   
@@ -677,20 +678,20 @@ Pʀᴇᴍɪᴜᴍ Fᴇᴀᴛᴜʀᴇs 🎁
 
 ➥ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ
 
-‼️ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴄʜᴇᴄᴋ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs & ɪᴛ's ᴘʀɪᴄᴇs</b>"""
+‼️ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴄʜᴇᴄᴋ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs & ɪᴛ's ᴘʀɪᴄᴇs..."""
 
 
-    DEVELOPER_TXT = """
-special Thanks To ❤️ Developers -
+  #  DEVELOPER_TXT = """
+#special Thanks To ❤️ Developers -
 
--Dev 1 [Owner of this bot ]<a href='https://t.me/Govind_Rawat921'>ⁱᵗᶻ ᵐᵉ ᵗᵍ 🇮🇳</a>
+#-Dev 1 [Owner of this bot ]<a href='https://t.me/Govind_Rawat921'>ⁱᵗᶻ ᵐᵉ ᵗᵍ 🇮🇳</a>
 
--Dev 2 <a href='https://t.me/RB_Backup'>RB</a>
+#-Dev 2 <a href='https://t.me/RB_Backup'>RB</a>
 
--Dev 3 <a href='https://t.me/RB_Backup'>Jᴏᴇʟ </> TɢX</a>
+#-Dev 3 <a href='https://t.me/RB_Backup'>Jᴏᴇʟ </> TɢX</a>
 
-- Dev 4 <a href='https://t.me/RB_Backup'>RB Backup</a>
-"""
+#- Dev 4 <a href='https://t.me/RB_Backup'>RB Backup</a>
+#"""
 
 
 
