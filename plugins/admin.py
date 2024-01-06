@@ -48,7 +48,7 @@ async def vip1(bot,update):
 async def vip2(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
-    add_date  = date.today()
+        add_date  = date.today()
 	ex_date(int(user_id), today + timedelta(days=30)
 	usertype(int(user_id),"💫 **GOLD**")
 	addpre(int(user_id))
