@@ -1298,7 +1298,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                   #InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/Govind_Rawat921")
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', callback_data='BUY_PREMIUM_INFO')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1858,6 +1858,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.GUJARATI_INFO),
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )
+     elif query.data == "BUY_PREMIUM_INFO":
+            btn = [[
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/Govind_Rawat921")
+                  ]]
+            await client.edit_message_media(
+                query.message.chat.id, 
+                query.message.id, 
+                InputMediaPhoto(random.choice(PICS))
+            )
+            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_text(
+                text=(script.BUY_PREMIUM_INFO),
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
