@@ -1,7 +1,7 @@
-#Thanks @Lazydeveloperr helping this journey 
+#Coded by KA18 the @legend580 💛❤️
+
 from os import environ
 from typing import Dict, Optional
-
 
 class TokenParser:
     def __init__(self, config_file: Optional[str] = None):
