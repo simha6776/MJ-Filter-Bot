@@ -1296,7 +1296,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('♲︎︎︎ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK),
                     InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
                 ]]
-                [
+                # [
                 #     InlineKeyboardButton('𝐁𝐔𝐘 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐀𝐃𝐒 𝐅𝐑𝐄𝐄 𝐌𝐎𝐕𝐈𝐄', callback_data='premium_info')
                 #   ]]
         
