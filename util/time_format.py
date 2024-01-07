@@ -1,4 +1,4 @@
-#Thanks @Lazydeveloperr helping this journey 
+#Coded by KA18 the @legend580 💛❤️
 
 def get_readable_time(seconds: int) -> str:
     count = 0
