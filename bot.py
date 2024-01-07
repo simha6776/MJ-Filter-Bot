@@ -36,9 +36,9 @@ from plugins import web_server
 
 import asyncio
 from pyrogram import idle
-from lazybot import MJBot
+from MJbot import MJBot
 from util.keepalive import ping_server
-from lazybot.clients import initialize_clients
+from MJbot.clients import initialize_clients
 
 
 ppath = "plugins/*.py"
