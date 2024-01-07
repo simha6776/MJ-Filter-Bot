@@ -2,7 +2,7 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Jayanth14072003/MJ-Filter-Bot.git /MJ_FILTER_BOT 
+  git clone https://github.com/Jayanth14072003/MJ-Filter-Bot.git /MJ
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /MJ_FILTER_BOT 
