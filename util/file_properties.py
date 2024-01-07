@@ -1,4 +1,5 @@
-#Thanks @Lazydeveloperr helping this journey 
+#Coded by KA18 the @legend580 💛❤️
+
 from pyrogram import Client
 from typing import Any, Optional
 from pyrogram.types import Message
