@@ -25,7 +25,7 @@ from pyrogram import Client
 from info import *
 
 
-class LazyPrincessXBot(Client):
+class LegendMJBot(Client):
 
     def __init__(self):
         super().__init__(
@@ -76,7 +76,7 @@ class LazyPrincessXBot(Client):
                 yield message
                 current += 1
       
-LazyPrincessBot = LazyPrincessXBot()
+MJBot = LegendMJBot()
 
 multi_clients = {}
 work_loads = {}
