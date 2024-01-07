@@ -1,5 +1,5 @@
 {
-    "name": "RB_FILTER_BOT",
+    "name": "MJ_FILTER_BOT",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/RB-Bots/RB_FILTER_BOT",
-    "repository": "https://github.com/RB-Bots/RB_FILTER_BOT",
+    "website": "https://github.com/Jayanth14072003/MJ-Filter-Bot",
+    "repository": "https://github.com/Jayanth14072003/MJ-Filter-Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
