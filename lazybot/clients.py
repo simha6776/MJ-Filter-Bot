@@ -5,11 +5,11 @@ import logging
 from info import *
 from pyrogram import Client
 from util.config_parser import TokenParser
-from . import multi_clients, work_loads, LazyPrincessBot
+from . import multi_clients, work_loads, MJBot
 
 
 async def initialize_clients():
-    multi_clients[0] = LazyPrincessBot
+    multi_clients[0] = MJBot
     work_loads[0] = 0
     all_tokens = TokenParser().parse_from_env()
     if not all_tokens:
