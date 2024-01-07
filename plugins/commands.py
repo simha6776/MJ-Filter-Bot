@@ -56,7 +56,7 @@ async def start(client, message):
                 ],[
                  # InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/Govind_Rawat921")
                 ],[
-                    InlineKeyboardButton('𝐁𝐔𝐘 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐀𝐃𝐒 𝐅𝐑𝐄𝐄 𝐌𝐎𝐕𝐈𝐄', callback_data='premium_info)
+                    InlineKeyboardButton('𝐁𝐔𝐘 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐀𝐃𝐒 𝐅𝐑𝐄𝐄 𝐌𝐎𝐕𝐈𝐄', callback_data='premium_info')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ") 
