@@ -5,7 +5,7 @@ import asyncio
 import logging
 from info import *
 from typing import Dict, Union
-from lazybot import work_loads
+from MJbot import work_loads
 from pyrogram import Client, utils, raw
 from .file_properties import get_file_ids
 from pyrogram.session import Session, Auth
