@@ -1,4 +1,5 @@
-#Thanks @Lazydeveloperr helping this journey 
+#Coded by KA18 the @legend580 💛❤️
+
 import asyncio
 import logging
 import aiohttp
