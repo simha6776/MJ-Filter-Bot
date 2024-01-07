@@ -23,9 +23,9 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "6100891233:AAHo_OjnFWTdY_JewRdcqphxASAcAK1
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', ' https://graph.org/file/cc4aa9e380457ac7a8f87.jpg  https://telegra.ph/file/fa5a2d21e10242fb65bfd.jpg ')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
+PICS = (environ.get('PICS', 'https://graph.org/file/4cf3f3c83e15e2b80e9f3.jpg')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/4cf3f3c83e15e2b80e9f3.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
@@ -62,7 +62,7 @@ GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+0fMMY79eUKExYjk1')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MJHitz')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/MJ_bypass_link/13')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
+MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺 ❤️')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002048677793'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MJ_supportbot')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
