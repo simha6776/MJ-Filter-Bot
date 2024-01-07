@@ -1,3 +1,4 @@
+#Coded by KA18 the @legend580 💛❤️
 
 import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
