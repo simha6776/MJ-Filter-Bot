@@ -1,4 +1,4 @@
-#Thanks @Lazydeveloperr helping this journey 
+#Coded by KA18 the @legend580 💛❤️
 
 import jinja2
 from info import *
