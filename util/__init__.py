@@ -1,1 +1,1 @@
-# I hate my Dirty-Mind @LazyDeveloperr & @creatorrio 😎😍
+#Coded by KA18 the @legend580 💛❤️
