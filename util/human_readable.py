@@ -1,4 +1,5 @@
-#Thanks @Lazydeveloperr helping this journey 
+#Coded by KA18 the @legend580 💛❤️
+
 def humanbytes(size):
     # https://stackoverflow.com/a/49361727/4723940
     # 2**10 = 1024
