@@ -1,7 +1,5 @@
-
-    # 🥰  Thank you for helping  this journey  @LazyDeveloperr  🥰
-    # thanks Adarsh Goel for Server Routing
-    #thanks @creatorrio
+#Coded by KA18 the @legend580 💛❤️
+# thanks Adarsh Goel for Server Routing
 
 class InvalidHash(Exception):
     message = "Invalid hash"
