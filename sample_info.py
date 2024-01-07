@@ -1,3 +1,4 @@
+#Coded by KA18 the @legend580 💛❤️
 
 # Bot information
 SESSION = 'Media_search'
