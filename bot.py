@@ -47,7 +47,7 @@ MJBot.start()
 loop = asyncio.get_event_loop()
 
 
-async def Lazy_start():
+async def MJ_start():
     print('\n')
     print('Initalizing Lazy Bot')
     bot_info = await MJBot.get_me()
@@ -63,7 +63,7 @@ async def Lazy_start():
             load = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(load)
             sys.modules["plugins." + plugin_name] = load
-            print("Lazy Imported => " + plugin_name)
+            print("MJ Imported => " + plugin_name)
     if ON_HEROKU:
         asyncio.create_task(ping_server())
     b_users, b_chats = await db.get_banned()
@@ -76,7 +76,6 @@ async def Lazy_start():
     temp.B_NAME = me.first_name
     MJBot.username = '@' + me.username
     logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
-    logging.info(LOG_STR)
     logging.info(script.LOGO)
     tz = pytz.timezone('Asia/Kolkata')
     today = date.today()
@@ -92,7 +91,7 @@ async def Lazy_start():
 
 if __name__ == '__main__':
     try:
-        loop.run_until_complete(Lazy_start())
+        loop.run_until_complete(MJ_start())
     except KeyboardInterrupt:
         logging.info('Service Stopped Bye 👋')
 
