@@ -31,23 +31,23 @@ async def git(Kashmira, message):
 
 <b>Open Issues :</b> <i>{qw.get("open_issues")}</i>
 
-<b>Powed by :</b> @creatorrio
+<b>Powed by :</b> @MJ_supportbot
 
 """
         if qw.get("description"):
-            txt += f'<b>Description :</b> <code>{qw.get("description")}</code>'
+            txt += f'<b>Description :</b> <code>{qw.get("description")}</code>\n'
 
         if qw.get("language"):
-            txt += f'<b>Language :</b> <code>{qw.get("language")}</code>'
+            txt += f'<b>Language :</b> <code>{qw.get("language")}</code>\n'
 
         if qw.get("size"):
-            txt += f'<b>Size :</b> <code>{qw.get("size")}</code>'
+            txt += f'<b>Size :</b> <code>{qw.get("size")}</code>\n'
 
         if qw.get("score"):
-            txt += f'<b>Score :</b> <code>{qw.get("score")}</code>'
+            txt += f'<b>Score :</b> <code>{qw.get("score")}</code>\n'
 
         if qw.get("created_at"):
-            txt += f'<b>Created At :</b> <code>{qw.get("created_at")}</code>'
+            txt += f'<b>Created At :</b> <code>{qw.get("created_at")}</code>\n'
 
         if qw.get("archived") == True:
             txt += f"<b>This Project is Archived</b>"
