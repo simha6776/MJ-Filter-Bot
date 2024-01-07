@@ -1298,7 +1298,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                   #InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/Govind_Rawat921")
                 ],[
-                    InlineKeyboardButton('𝐁𝐔𝐘 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐀𝐃𝐒 𝐅𝐑𝐄𝐄 𝐌𝐎𝐕𝐈𝐄', callback_data='BUY_PREMIUM')
+                    InlineKeyboardButton('𝐁𝐔𝐘 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐀𝐃𝐒 𝐅𝐑𝐄𝐄 𝐌𝐎𝐕𝐈𝐄', callback_data='premium_info')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1731,7 +1731,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
-    elif query.data == "BUY_PREMIUM":
+    elif query.data == "premium_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
                     InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/Govind_Rawat921")
