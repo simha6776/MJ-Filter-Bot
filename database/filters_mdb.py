@@ -1,12 +1,12 @@
-
-import pymongo
+import motor.motor_asyncio
+# import pymongo
 from info import DATABASE_URI, DATABASE_NAME
 from pyrogram import enums
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
-myclient = pymongo.MongoClient(DATABASE_URI)
+myclient = motor.motor_asyncio.AsyncIOMotorClient(DATABASE_URI)
 mydb = myclient[DATABASE_NAME]
 
 
