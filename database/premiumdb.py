@@ -1,9 +1,11 @@
-import pymongo
+# import pymongo
+import motor.motor_asyncio
 import os
 from util.date import add_date
 DB_NAME = os.environ.get("DB_NAME", "")
 DB_URL = os.environ.get("DB_URL", "")
-mongo = pymongo.MongoClient(DB_URL)
+
+mongo = motor.motor_asyncio.AsyncIOMotorClient(DB_URL)
 db = mongo[DB_NAME]
 dbcol = db["user"]
 
