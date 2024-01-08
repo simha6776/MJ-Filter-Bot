@@ -172,7 +172,7 @@ async def style(c, m):
     r, oldtxt = m.message.reply_to_message.text.split(None, 1) 
     new_text = cls(oldtxt)            
     try:
-        await m.message.edit_text(f"`{new_text}`\n\n👆 Click To Copy\n\nLegend - @MJ_supportbot", reply_markup=m.message.reply_markup)
+        await m.message.edit_text(f"<b>Your Font Generated Successfully👇\n\n Font - `{new_text}`\n\n👆 Click To Copy\n\By - @MJ_supportbot</b>", reply_markup=m.message.reply_markup)
     except Exception as e:
         print(e)
 
