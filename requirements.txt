@@ -3,6 +3,7 @@ pyrogram>=2.0.30
 tgcrypto
 motor==2.5.1
 pymongo[srv]==3.12.3
+coroutine
 marshmallow==3.14.1 
 umongo==3.0.1 
 requests 
@@ -16,9 +17,7 @@ aiohttp
 #---master---# 
 #Telethroid==0.0.10 
 PyLeaves==1.0.2 
-  
-  
- 
+
 #---ytdl----# 
 ffmpeg
 youtube_search
@@ -26,7 +25,6 @@ youtube-search-python==1.4.6
 yt-dlp
 youtube-dl
 requests 
-  
   
 #---others----# 
 opencv-python-headless==4.7.0.68 
