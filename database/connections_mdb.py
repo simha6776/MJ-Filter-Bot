@@ -1,13 +1,13 @@
 
-import pymongo
-
+# import pymongo
+import motor.motor_asyncio
 from info import DATABASE_URI, DATABASE_NAME
 
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
-myclient = pymongo.MongoClient(DATABASE_URI)
+myclient = motor.motor_asyncio.AsyncIOMotorClient(DATABASE_URI)
 mydb = myclient[DATABASE_NAME]
 mycol = mydb['CONNECTION']   
 
