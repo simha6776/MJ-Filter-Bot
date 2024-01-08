@@ -29,7 +29,7 @@ async def start(client, message):
                     InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK),
                     InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)                   
                   ],[
-                    InlineKeyboardButton('☠ C🇱​​🇴​​🇸​​🇪​ M​​🇪​​🇳​​🇺​', callback_data='close_data')
+                    InlineKeyboardButton('☠ Cʟᴏꜱᴇ Mᴇɴᴜ​', callback_data='close_data')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -61,7 +61,7 @@ async def start(client, message):
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('☠ C🇱​​🇴​​🇸​​🇪​ M​​🇪​​🇳​​🇺​', callback_data='close_data')
+                    InlineKeyboardButton('☠ Cʟᴏꜱᴇ Mᴇɴᴜ​', callback_data='close_data')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAIRBGPwcjyu8rC9ISXtapMGNc9VxFvOAAInAQACyJRkFOI9YoCRRKaaHgQ") 
@@ -113,7 +113,7 @@ async def start(client, message):
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('☠ C🇱​​🇴​​🇸​​🇪​ M​​🇪​​🇳​​🇺​', callback_data='close_data')
+                    InlineKeyboardButton('☠ Cʟᴏꜱᴇ Mᴇɴᴜ​', callback_data='close_data')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
