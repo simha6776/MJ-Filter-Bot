@@ -21,7 +21,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "6100891233:AAHo_OjnFWTdY_JewRdcqphxASAcAK1
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
 PICS = (environ.get('PICS', 'https://graph.org/file/4cf3f3c83e15e2b80e9f3.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/4cf3f3c83e15e2b80e9f3.jpg")
@@ -51,8 +51,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'OnePageLink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '1f53325bf43f3821b83b0fae2b2596c9c3d14e0d')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'upshrink.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'c5dbea7703b576144630660355aaa3dbd3a59cc5')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
