@@ -1,6 +1,6 @@
 
-# import pymongo
-import motor.motor_asyncio
+import pymongo
+# import motor.motor_asyncio
 from info import DATABASE_URI, DATABASE_NAME
 
 import logging
