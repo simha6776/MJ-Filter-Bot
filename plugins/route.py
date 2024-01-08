@@ -14,13 +14,21 @@ from util.custom_dl import ByteStreamer
 from util.time_format import get_readable_time
 from util.render_template import render_page
 from info import *
-
+import jinja2
 
 routes = web.RouteTableDef()
 
 @routes.get("/", allow_head=True)
 async def root_route_handler(request):
-    return web.json_response("BenFilterBot")
+    # return web.json_response("BenFilterBot")
+    template_file = "template/req.html"
+    template = jinja2.Template(f.read())
+    return template.render(
+        file_name="",
+        file_url="",
+        file_size="",
+        file_unique_id=""
+    )
 
 
 @routes.get(r"/watch/{path:\S+}", allow_head=True)
