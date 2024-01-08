@@ -201,7 +201,7 @@ async def start(client, message):
                 media = getattr(msg, msg.media.value)
                 if BATCH_FILE_CAPTION:
                     try:
-                        f_caption=BATCH_FILE_CAPTION.format(file_name=getattr(media, 'file_name', ''), file_size=getattr(media, 'file_size', ''), file_caption=getattr(msg, 'caption', ''))
+                        f_caption=BATCH_FILE_CAPTION.format(file_name=getattr(media, 'file_name', ''), file_size=getattr(media, 'file_size', ''), file_id = getattr(msg, "file_id" ,''), file_caption=getattr(msg, 'caption', ''))
                     except Exception as e:
                         logger.exception(e)
                         f_caption = getattr(msg, 'caption', '')
@@ -209,11 +209,32 @@ async def start(client, message):
                     media = getattr(msg, msg.media.value)
                     file_name = getattr(media, 'file_name', '')
                     f_caption = getattr(msg, 'caption', file_name)
+                    file_id = getattr(msg, "file_id" ,'')
                 try:
-                    await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False)
+                    await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False, 
+                        reply_markup=InlineKeyboardMarkup(
+                        [
+                         [
+                          InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                       ],[ 
+                            InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                            ]
+                        ]
+                    ))
                 except FloodWait as e:
                     await asyncio.sleep(e.x)
-                    await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False)
+                    await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False,
+                                  reply_markup=InlineKeyboardMarkup(
+                        [
+                         [
+                          InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                       ],[ 
+                            InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                            ]
+                        ]
+                    ))
                 except Exception as e:
                     logger.exception(e)
                     continue
