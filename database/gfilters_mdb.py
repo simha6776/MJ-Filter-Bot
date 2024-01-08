@@ -1,15 +1,13 @@
-import motor.motor_asyncio
-# import pymongo
+# import motor.motor_asyncio
+import pymongo
 from info import DATABASE_URI, DATABASE_NAME
 from pyrogram import enums
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
-myclient = motor.motor_asyncio.AsyncIOMotorClient(DATABASE_URI)
+myclient = pymongo.MongoClient(DATABASE_URI)
 mydb = myclient[DATABASE_NAME]
-
-
 
 async def add_gfilter(gfilters, text, reply_text, btn, file, alert):
     mycol = mydb[str(gfilters)]
@@ -27,7 +25,6 @@ async def add_gfilter(gfilters, text, reply_text, btn, file, alert):
         mycol.update_one({'text': str(text)},  {"$set": data}, upsert=True)
     except:
         logger.exception('Some error occured!', exc_info=True)
-             
      
 async def find_gfilter(gfilters, name):
     mycol = mydb[str(gfilters)]
@@ -60,7 +57,6 @@ async def get_gfilters(gfilters):
     except:
         pass
     return texts
-
 
 async def delete_gfilter(message, text, gfilters):
     mycol = mydb[str(gfilters)]
@@ -95,7 +91,6 @@ async def count_gfilters(gfilters):
 
     count = mycol.count()
     return False if count == 0 else count
-
 
 async def gfilter_stats():
     collections = mydb.list_collection_names()
