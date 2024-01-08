@@ -50,7 +50,7 @@ loop = asyncio.get_event_loop()
 
 async def MJ_start():
     print('\n')
-    print('Initalizing Lazy Bot')
+    print('Initalizing MJ Bot')
     bot_info = await MJBot.get_me()
     MJBot.username = bot_info.username
     await initialize_clients()
