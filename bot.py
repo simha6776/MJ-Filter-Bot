@@ -70,7 +70,7 @@ async def MJ_start():
     b_users, b_chats = await db.get_banned()
     temp.BANNED_USERS = b_users
     temp.BANNED_CHATS = b_chats
-    Media.ensure_indexes()
+    await Media.ensure_indexes()
     me = await MJBot.get_me()
     temp.ME = me.id
     temp.U_NAME = me.username
