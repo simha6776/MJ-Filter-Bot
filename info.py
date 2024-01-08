@@ -30,27 +30,27 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1061576483 5963138883').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002048677793').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001748753634').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1061576483 5963138883').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM', "1061576483 5963138883").split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1002048677793')
-auth_grp = environ.get('AUTH_GROUP', '-1001561558776')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001748753634')
+auth_grp = environ.get('AUTH_GROUP', '-1001858831083')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001561558776')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002048677793')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001723594469')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002104478237')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Jayanna:Jayanna2023@yash.tm1c2bd.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Test-DB")
+DATABASE_NAME = environ.get('DATABASE_NAME', "MJ_Peter_filter")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', False))
+VERIFY = bool(environ.get('VERIFY', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'upshrink.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'c5dbea7703b576144630660355aaa3dbd3a59cc5')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
@@ -59,11 +59,11 @@ MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+0fMMY79eUKExYjk1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MJHitz')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MJhitz')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/MJ_bypass_link/13')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-MSG_ALRT = environ.get('MSG_ALRT', 'H​​🇪​​🇱​​🇱​​🇴​ ​M​​🇾​ ​D🇪​​🇦​​🇷​ ​F​​🇷​​🇮​​🇪​​🇳​​🇩​​🇸​ ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002048677793'))
+MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends​ ❤️')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001774578809'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MJ_supportbot')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
@@ -77,7 +77,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002048677793')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001879897483')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
