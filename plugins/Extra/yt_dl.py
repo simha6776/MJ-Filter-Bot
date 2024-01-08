@@ -8,9 +8,9 @@ from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
+from info import ADMINS
 
-
-@Client.on_message(filters.command(['song', 'mp3']) & filters.private)
+@Client.on_message(filters.command(['song', 'mp3']) & filters.user(ADMINS))
 async def song(client, message):
     user_id = message.from_user.id 
     user_name = message.from_user.first_name 
@@ -80,7 +80,7 @@ def get_text(message: Message) -> [None,str]:
         return None
 
 
-@Client.on_message(filters.command(["video", "mp4"]))
+@Client.on_message(filters.command(["video", "mp4"]) & filters.user(ADMINS))
 async def vsong(client, message: Message):
     urlissed = get_text(message)
     pablo = await client.send_message(message.chat.id, f"**𝙵𝙸𝙽𝙳𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝚅𝙸𝙳𝙴𝙾** `{urlissed}`")
