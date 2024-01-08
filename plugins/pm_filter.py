@@ -1296,7 +1296,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('♲︎︎︎ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK),
                     InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('☠ C🇱​​🇴​​🇸​​🇪​ M​​🇪​​🇳​​🇺​', callback_data='close_data')
+                    InlineKeyboardButton('☠ Cʟᴏꜱᴇ Mᴇɴᴜ​', callback_data='close_data')
                 ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1353,10 +1353,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data='shortlink_info'),
             InlineKeyboardButton('⚙️ ᴀᴅᴍɪɴ ᴏɴʟʏ 🔧', callback_data='admin')
-         ],[
+         ], [ 
              InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='store_file'),
-             InlineKeyboardButton('ꜰɪʟᴛᴇʀꜱ', callback_data='filters'),  
              InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele') 
+         ],[
+             InlineKeyboardButton('ꜱᴏɴɢ', callback_data='song'), 
+             InlineKeyboardButton('ꜰɪʟᴛᴇʀꜱ', callback_data='filters'),  
+             InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl')
          ], [             
              InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
         ]]
