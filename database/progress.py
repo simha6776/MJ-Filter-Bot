@@ -1,7 +1,6 @@
 import math
 import time
 
-
 async def progress_for_pyrogram(
     current,
     total,
@@ -22,7 +21,6 @@ async def progress_for_pyrogram(
 
         elapsed_time = TimeFormatter(milliseconds=elapsed_time)
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
-        
 
         tmp = progress + "{0} of {1}\n**Speed**: {2}/s\n**ETA**: {3}\n".format(
             humanbytes(current),
