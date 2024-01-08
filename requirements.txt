@@ -1,9 +1,7 @@
-pymongo
-dnspython
 pyrogram>=2.0.30 
-tgcrypto 
-pymongo[srv]==3.12.3 
+tgcrypto
 motor==3.1.1
+pymongo
 marshmallow==3.14.1 
 umongo==3.0.1 
 requests 
