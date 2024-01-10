@@ -1290,11 +1290,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
-                ],[
                     InlineKeyboardButton('♲︎︎︎ Uᴘᴅᴀᴛᴇs', url=CHNL_LNK),
                     InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                ],[
+                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
                     InlineKeyboardButton('☠ Cʟᴏꜱᴇ Mᴇɴᴜ​', callback_data='close_data')
                 ]]
@@ -1305,6 +1305,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
@@ -1320,13 +1323,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs', callback_data='global_filters')
         ]]
-        
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         await query.message.edit_text(
             text=script.ALL_FILTERS.format(query.from_user.mention),
             reply_markup=reply_markup,
@@ -1342,6 +1347,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.GFILTER_TXT,
@@ -1351,13 +1359,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data='shortlink_info'),
-            InlineKeyboardButton('⚙️ ᴀᴅᴍɪɴ ᴏɴʟʏ 🔧', callback_data='admin')
+            InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data='shortlink_info')
           ],[
-             InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='store_file'),
+             InlineKeyboardButton('⚙️ Aᴅᴍɪɴ ᴏɴʟʏ 🔧', callback_data='admin'),
+             InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='store_file')
+         ],[
              InlineKeyboardButton('ꜰɪʟᴛᴇʀꜱ', callback_data='filters'),  
              InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele')
-         ], [             
+         ],[             
              InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1366,6 +1375,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
@@ -1384,6 +1396,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
@@ -1400,6 +1415,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         await query.message.edit_text(
             text=script.SOURCE_TXT,
             reply_markup=reply_markup,
@@ -1416,6 +1434,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         await query.message.edit_text(
             text=script.MANUELFILTER_TXT,
             reply_markup=reply_markup,
@@ -1430,6 +1451,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.BUTTON_TXT,
@@ -1445,6 +1469,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.AUTOFILTER_TXT,
@@ -1460,6 +1487,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.CONNECTION_TXT,
@@ -1476,6 +1506,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ADMIN_TXT,
@@ -1492,6 +1525,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.FILE_STORE_TXT,
@@ -1508,6 +1544,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.EXTRA_TXT,
@@ -1524,6 +1563,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
         users = await db.total_users_count()
@@ -1548,6 +1590,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
         users = await db.total_users_count()
@@ -1584,6 +1629,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.SHORTLINK_INFO),
@@ -1600,6 +1648,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.TELE_TXT),
@@ -1611,21 +1662,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="● ◌ ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ●"
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         await query.message.edit_text(
             text=script.YTDL_TXT,
             reply_markup=reply_markup,
@@ -1641,6 +1685,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.SHARE_TXT),
@@ -1657,6 +1704,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.SONG_TXT),
@@ -1668,21 +1718,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="● ◌ ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ●"
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(text="▣ ▢ ▢")
+        await query.message.edit_text(text="▣ ▣ ▢")
+        await query.message.edit_text(text="▣ ▣ ▣")
         await query.message.edit_text(
             text=script.JSON_TXT,
             reply_markup=reply_markup,
@@ -1698,6 +1741,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.STICKER_TXT),
@@ -1714,6 +1760,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.TAMIL_INFO),
@@ -1730,6 +1779,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.PREMIUM_INFO),
@@ -1746,6 +1798,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.ENGLISH_INFO),
@@ -1762,6 +1817,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.HINDI_INFO),
@@ -1778,6 +1836,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.TELUGU_INFO),
@@ -1794,6 +1855,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.MALAYALAM_INFO),
@@ -1810,6 +1874,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.URDU_INFO),
@@ -1827,6 +1894,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.BANGLADESH_INFO),
@@ -1843,6 +1913,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.KANNADA_INFO),
@@ -1860,6 +1933,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
+            await query.message.edit_text(text="▣ ▢ ▢")
+            await query.message.edit_text(text="▣ ▣ ▢")
+            await query.message.edit_text(text="▣ ▣ ▣")
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.GUJARATI_INFO),
