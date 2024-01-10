@@ -48,8 +48,7 @@ async def start(client, message):
         return 
     if not await db.is_user_exist(message.from_user.id):
         a=await db.add_user(message.from_user.id, message.from_user.first_name)
-        print("User added successfully...!!")
-        print(a)
+        
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
@@ -666,16 +665,16 @@ async def settings(client, message):
 
     if settings is not None:
         buttons = [
-            [
-                InlineKeyboardButton(
-                    'Rᴇsᴜʟᴛ Pᴀɢᴇ',
-                    callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
-                ),
-                InlineKeyboardButton(
-                    'Bᴜᴛᴛᴏɴ' if settings["button"] else 'Tᴇxᴛ',
-                    callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
-                ),
-            ],
+            #[
+                #InlineKeyboardButton(
+                    #'Rᴇsᴜʟᴛ Pᴀɢᴇ',
+                    #callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
+                #),
+                #InlineKeyboardButton(
+                    #'Bᴜᴛᴛᴏɴ' if settings["button"] else 'Tᴇxᴛ',
+                    #callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
+                #),
+            #],
             [
                 InlineKeyboardButton(
                     'Fɪʟᴇ Sᴇɴᴅ Mᴏᴅᴇ',
