@@ -51,7 +51,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "MJ_Peter_filter")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'upshrink.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'c5dbea7703b576144630660355aaa3dbd3a59cc5')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
