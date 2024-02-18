@@ -31,7 +31,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1061576483 5963138883').split()]
 YT_ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('YT_ADMINS', '1061576483 5963138883 1365052525 1251324232 1908821027').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001809359257').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001809359257 -1001989791617').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1061576483 5963138883').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM', "1061576483 5963138883").split()]
@@ -52,10 +52,10 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'upshrink.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'c5dbea7703b576144630660355aaa3dbd3a59cc5')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'kingurl.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'e096514a6f0e699170dcf87b7a6aae271f52b86d')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002125374730').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
