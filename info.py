@@ -15,7 +15,7 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '3393749'))
+API_ID = int(environ.get('API_ID', ''))
 API_HASH = environ.get('API_HASH', 'a15a5954a1db54952eebd08ea6c68b71')
 BOT_TOKEN = environ.get('BOT_TOKEN', "5866941174:AAGPQoEpVDYLzES0KiObjfIGuZ1AL4bDf1A")
 
@@ -29,12 +29,12 @@ MELCOW_VID = environ.get("MELCOW_VID", "")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1061576483 5963138883').split()]
-YT_ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('YT_ADMINS', '1061576483 5963138883 1365052525 1251324232 1908821027').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1895902057').split()]
+YT_ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('YT_ADMINS', '1895902057').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001809359257 -1001989791617').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1061576483 5963138883').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1895902057').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM', "1061576483 5963138883").split()]
+PREMIUM = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM', "1895902057").split()]
 auth_channel = environ.get('AUTH_CHANNEL', '-1001748753634')
 auth_grp = environ.get('AUTH_GROUP', '-1001723594469')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
@@ -46,8 +46,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Jayanna:Jayanna2023@yash.tm1c2bd.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "MJ_Peter_filter")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mmeghanaht:RDyNxl6PgstxBdw4@cluster0.9ia1b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
