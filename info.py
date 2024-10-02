@@ -15,17 +15,17 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', 'a15a5954a1db54952eebd08ea6c68b71')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5866941174:AAGPQoEpVDYLzES0KiObjfIGuZ1AL4bDf1A")
+API_ID = int(environ.get('API_ID', '21601506'))
+API_HASH = environ.get('API_HASH', ' 917d7ee9417746eb271c29b2cab50646')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7086003866:AAHZz0KzbUxfAx8TTZOQMTTlU8IpVqtBj0U")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/4cf3f3c83e15e2b80e9f3.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/4cf3f3c83e15e2b80e9f3.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "")
+PICS = (environ.get('PICS', 'https://telegra.ph/file/8c34c755dd16581c1c6b5.jpg https://telegra.ph/file/07f185825c5b7bfd6fbfb.jpg https://telegra.ph/file/85f95494565a762edb3e7.jpg https://telegra.ph/file/2a8b3779760289b76de24.jpg')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/8c34c755dd16581c1c6b5.jpg.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
