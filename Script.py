@@ -7,9 +7,9 @@ class script(object):
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟
- ‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/MJ_search_bot> MJ Sᴇᴀʀᴄʜ Bᴏᴛ</a>
+ ‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/+fodQhTZpYbMzNTVl> Movie Sᴇᴀʀᴄʜ Bᴏᴛ</a>
  ‣ My best friend : <a href='tg://settings'>Tʜɪs Pᴇʀsᴏɴ</a> 
- ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/MJ_supportbot'>ⁱᵗᶻ ᵐᵉ ᵗᵍ 🇮🇳</a> 
+ ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/creatorTgBotz'>ⁱᵗᶻ ᵐᵉ ᵗᵍ 🇮🇳</a> 
  ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a> 
  ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a> 
  ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/'>Mᴏɴɢᴏ ᴅʙ</a> 
