@@ -86,10 +86,10 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ',url="https://t.me/+0fMMY79eUKExYjk1"),
-            InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/MJ_supportbot")
+            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ',url="https://t.me/+fodQhTZpYbMzNTVl"),
+            InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="@creatorTgBotz")
         ],[
-            InlineKeyboardButton('Use Me Here', url=f'https://t.me/+0fMMY79eUKExYjk1')
+            InlineKeyboardButton('Use Me Here', url=f'https://t.me/+fodQhTZpYbMzNTVl')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -128,7 +128,7 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('Support', url=f'https://t.me/+0fMMY79eUKExYjk1')
+            InlineKeyboardButton('Support', url=f'https://t.me/+fodQhTZpYbMzNTVl')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
