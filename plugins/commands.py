@@ -19,7 +19,7 @@ import base64
 logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
-MJ_GL = "https://t.me/+0fMMY79eUKExYjk1"
+MJ_GL = "https://t.me/+fodQhTZpYbMzNTVl"
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
